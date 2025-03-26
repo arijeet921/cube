@@ -118,6 +118,115 @@ html {
 /* navbar styling end */
 
 
+/* testimonial section start */
+
+.testmonial-section {
+    background-color: #00719c;
+}
+
+.client-say p {
+    font-size: large;
+    color: #3e2f16;
+    font-weight: 600;
+
+}
+
+.client-say {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    /* Hide overflow for the quotation mark */
+}
+
+.client-say::before {
+    content: "“";
+    position: absolute;
+    top: -158px;
+    left: 22px;
+    font-size: 450px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    animation: slideDown 2s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -158px;
+        /* Start position */
+    }
+
+    50% {
+        top: -100px;
+        /* Move down slightly */
+    }
+
+    100% {
+        top: -158px;
+        /* Return to start position */
+    }
+}
+
+.client-say h3 {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: none;
+    font-weight: 600;
+    color: #2d1a06;
+
+}
+
+.testimonial-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.testimonial-card .name {
+    font-size: large;
+    font-weight: 800;
+    color: #403226;
+
+}
+
+.testimonial-card .location {
+    font-size: 15px;
+    margin-top: -12px;
+
+}
+
+.testimonial-img-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    display: inline-block;
+    border: 2px dashed #3e2f16;
+
+
+}
+
+.testimonial-user-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.text-container {
+    margin-left: 15px;
+}
+
+/* ================testimonial section end */
+
+
+/* accordian styling start */
+
 .accordion-button:not(.collapsed) {
     background-color: #f8f9fa;
     box-shadow: none;
@@ -129,6 +238,8 @@ html {
 .accordion-button::after {
     display: none; /* Hides Bootstrap's default icon */
 }
+
+/* accordian styling end */
 
 .signup {
     width: 100%;

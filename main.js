@@ -31,7 +31,7 @@
         $(".testimonial-carousel").owlCarousel({
             autoplay: true,
             smartSpeed: 1000,
-            items: 2,
+            items: 3,
             dots: false,
             loop: true,
             nav: true,
@@ -44,10 +44,13 @@ navText: [
 ],
             responsive: {
                 0: {
-                    items: 1 // Show 1 item on small screens
+                    items: 1 
                 },
                 768: {
-                    items: 2 // Show 2 items on medium screens
+                    items: 2 
+                },
+                992: {
+                    items: 3
                 }
             }
         });
