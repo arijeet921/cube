@@ -228,7 +228,7 @@ html {
 /* accordian styling start */
 
 .accordion-button:not(.collapsed) {
-    background-color: #f8f9fa;
+    background-color:  transparent;
     box-shadow: none;
 }
 .accordion-button:focus {
